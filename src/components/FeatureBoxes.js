@@ -3,7 +3,7 @@ import { Container, Grid, Box, Typography, Button } from '@mui/material';
 
 function FeatureBoxes() {
   return (
-    <Container maxWidth="xl" sx={{ mb: 10, pl: { xs: 0, md: '110px' }, pr: { xs: 0, md: '110px' } }}>
+    <Container maxWidth="xl" sx={{ mb: 0, pl: { xs: 0, md: '110px' }, pr: { xs: 0, md: '110px' } }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', gap: '30px', flexWrap: { xs: 'wrap', md: 'nowrap' }, overflowX: { xs: 'visible', md: 'auto' } }}>
         {/* Box 1 */}
         <Box sx={{
