@@ -28,12 +28,17 @@ function SecondaryNavBar() {
 
   // Mobile handlers
   const handleMobileMenuOpen = (event) => {
-    if (mobileMenuAnchor) {
+    if (mobileMenuAnchor === event.currentTarget) {
+      // Clicking the same button — close it
       setMobileMenuAnchor(null);
     } else {
+      // Clicking a different or no button — open it
       setMobileMenuAnchor(event.currentTarget);
     }
   };
+
+
+
   const handleMobileMenuClose = () => {
     setMobileMenuAnchor(null);
   };
@@ -68,7 +73,8 @@ function SecondaryNavBar() {
               <span className="after-iigs" style={{ color: '#506BA4', fontWeight: 'bold', transition: 'color 0.2s', marginLeft: 2 }}>STRATEGY</span>
             </Button>
           </Box>
-          {/* Full-width dropdown menu, only appears when IIGS iSTRATEGY is clicked */}
+          
+          {/* dropdown menu*/}
           <Popper
             open={Boolean(mobileMenuAnchor)}
             anchorEl={mobileMenuAnchor}
@@ -130,7 +136,7 @@ function SecondaryNavBar() {
     );
   }
 
-  // Desktop version (unchanged)
+  // Desktop version 
   return (
     <Box sx={{ borderTop: '1px solid rgba(255,255,255,0.1)', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
       <Container maxWidth="xl">
