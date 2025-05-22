@@ -28,16 +28,12 @@ function SecondaryNavBar() {
 
   // Mobile handlers
   const handleMobileMenuOpen = (event) => {
-    if (mobileMenuAnchor === event.currentTarget) {
-      // Clicking the same button — close it
+    if (mobileMenuAnchor) {
       setMobileMenuAnchor(null);
     } else {
-      // Clicking a different or no button — open it
       setMobileMenuAnchor(event.currentTarget);
     }
   };
-
-
 
   const handleMobileMenuClose = () => {
     setMobileMenuAnchor(null);
@@ -107,6 +103,7 @@ function SecondaryNavBar() {
                           fontWeight: 600,
                           fontSize: '1rem',
                           textTransform: 'none',
+                          ml: '10px',
                           px: 2,
                           py: 1.5,
                           borderBottom: '1px solid rgba(255,255,255,0.08)',

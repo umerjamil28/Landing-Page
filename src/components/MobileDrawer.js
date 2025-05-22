@@ -20,7 +20,7 @@ function MobileDrawer({ open, onClose }) {
         sx: {
           mt: 7, 
           borderRadius: 0,
-          height: '45%',
+          height: '100%',
           backgroundColor: 'white',
           width: '100vw', 
           maxWidth: '100vw',
