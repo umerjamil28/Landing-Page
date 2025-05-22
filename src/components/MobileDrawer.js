@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, Box, List, ListItem, ListItemText, Divider, Typography } from '@mui/material';
+import { Drawer, Box, List, ListItem, ListItemText } from '@mui/material';
 
 const drawerItems = [
   { label: 'Overview', hasDropdown: false },

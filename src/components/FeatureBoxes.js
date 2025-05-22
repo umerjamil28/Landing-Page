@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Box, Typography, Button } from '@mui/material';
+import { Container, Box, Typography, Button } from '@mui/material';
 
 function FeatureBoxes() {
   return (

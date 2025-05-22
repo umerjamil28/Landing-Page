@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Button, Container, Typography, Popper, Paper, ClickAwayListener, Menu, MenuItem, useMediaQuery } from '@mui/material';
+import { Box, Button, Container, Typography, Popper, Paper, ClickAwayListener, useMediaQuery } from '@mui/material';
 import { KeyboardArrowDown } from '@mui/icons-material';
 
 const navItems = [

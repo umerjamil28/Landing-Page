@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, useMediaQuery } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Button, Box } from '@mui/material';
 import { KeyboardArrowDown, Search, Phone, Language, Menu as MenuIcon } from '@mui/icons-material';
 
 function TopNavBar({ isMobile, handleMobileMenuToggle }) {
