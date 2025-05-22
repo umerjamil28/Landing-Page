@@ -1,30 +1,43 @@
 import React from 'react';
 import { Drawer, Box, List, ListItem, ListItemText, Divider, Typography } from '@mui/material';
 
+const drawerItems = [
+  { label: 'Overview', hasDropdown: false },
+  { label: 'Capabilities', hasDropdown: true },
+  { label: 'Industries', hasDropdown: true },
+  { label: 'Strategic Partners', hasDropdown: true },
+  { label: 'Insights', hasDropdown: true },
+  { label: 'Careers', hasDropdown: false },
+];
+
 function MobileDrawer({ open, onClose }) {
   return (
     <Drawer
       anchor="right"
       open={open}
       onClose={onClose}
+      PaperProps={{
+        sx: {
+          mt: 7, 
+          borderRadius: 0,
+          height: '45%',
+          backgroundColor: 'white',
+          width: '100vw', 
+          maxWidth: '100vw',
+        },
+      }}
     >
-      <Box sx={{ width: 250, bgcolor: '#0a1929', color: 'white', height: '100%' }}>
+      <Box sx={{ width: '100vw', height: '100%' }}>
         <List>
-          {['Partner', 'Company', 'Managed Services', 'Industries', 'Careers'].map((text) => (
-            <ListItem button key={text}>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
-          <Divider sx={{ bgcolor: 'rgba(255,255,255,0.1)' }} />
-          {['STRATEGY', 'IPROCURE', 'ISUPPLY', 'IFREIGHT', 'MANAGED SERVICES'].map((text) => (
-            <ListItem button key={text}>
-              <ListItemText 
-                primary={
-                  <Typography>
-                    <Typography component="span" sx={{ color: '#ff6b45' }}>IIGS</Typography> {text}
-                  </Typography>
-                } 
+          {drawerItems.map((item) => (
+            <ListItem button key={item.label} sx={{ px: 2, py: 2, display: 'flex', alignItems: 'center' }}>
+              <ListItemText
+                primary={item.label}
+                primaryTypographyProps={{ sx: { color: '#525252', fontWeight: 500 } }}
               />
+              {item.hasDropdown && (
+                <Box component="img" src="/Images/down.png" alt="down arrow" sx={{ width: 9.7, height: 5, ml: 1, alignSelf: 'center' }} />
+              )}
             </ListItem>
           ))}
         </List>
