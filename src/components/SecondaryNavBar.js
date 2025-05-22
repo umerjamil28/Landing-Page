@@ -177,40 +177,40 @@ function SecondaryNavBar() {
                 </Button>
                 <Popper open={openIndex === idx} anchorEl={anchorEl} placement="bottom-start" style={{ zIndex: 1300, minWidth: 500, marginTop: 8 }}>
                   <ClickAwayListener onClickAway={handleMenuClose}>
-                    <Paper elevation={3} sx={{ ml: 1, mt: 1, p: 2.5, minWidth: 500, maxWidth: 550, borderRadius: 0 }}>
+                    <Paper elevation={3} sx={{ ml: 1, mt: 1, p: 2.5, minWidth: 500, maxWidth: 550, borderRadius: 0, backgroundColor: '#2D53A4' }}>
                       <Box sx={{ display: 'flex', flexDirection: 'row', gap: 4, alignItems: 'flex-start', maxHeight: 300, overflowY: 'auto' }}>
                         {/* Services Column */}
                         <Box sx={{ minWidth: 180 }}>
-                          <Typography variant="subtitle1" sx={{ mb: 1.5, fontWeight: 600, color: 'black', fontSize: '1.05rem' }}>Services</Typography>
+                          <Typography variant="subtitle1" sx={{ mb: 1.5, fontWeight: 600, color: '#ffffff', fontSize: '1.05rem' }}>Services</Typography>
                           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Application services</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Artificial intelligence</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Automation</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Business strategy</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Cloud</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Customer experience</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Cybersecurity</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Finance</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>HR and talent</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Marketing</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Supply chain</Typography>
-                            <Typography sx={{ color: '#525252', fontSize: '0.90rem', py: 0.2 }}>Sustainability</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Application services</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Artificial intelligence</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Automation</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Business strategy</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Cloud</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Customer experience</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Cybersecurity</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Finance</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>HR and talent</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Marketing</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Supply chain</Typography>
+                            <Typography sx={{ color: '#ffffff', fontSize: '0.90rem', py: 0.2 }}>Sustainability</Typography>
                           </Box>
                         </Box>
                         {/* Signature Experiences Column */}
                         <Box sx={{ minWidth: 220, borderLeft: '1px solid #eee', pl: 3 }}>
-                          <Typography variant="subtitle1" sx={{ mb: 1.5, fontWeight: 600, color: 'black', fontSize: '1.05rem' }}>Signature Experiences</Typography>
+                          <Typography variant="subtitle1" sx={{ mb: 1.5, fontWeight: 600, color: '#ffffff', fontSize: '1.05rem' }}>Signature Experiences</Typography>
                           <Box sx={{ mb: 1.2 }}>
-                            <Typography sx={{ fontWeight: 'bold', color: '#525252', fontSize: '0.85rem' }}>Consulting Advantage</Typography>
-                            <Typography variant="body2" sx={{ color: '#525252', fontSize: '0.85rem' }}>First-of-its-kind AI-powered platform to supercharge client delivery faster, at scale.</Typography>
+                            <Typography sx={{ fontWeight: 'bold', color: '#ffffff', fontSize: '0.85rem' }}>Consulting Advantage</Typography>
+                            <Typography variant="body2" sx={{ color: '#ffffff', fontSize: '0.85rem' }}>First-of-its-kind AI-powered platform to supercharge client delivery faster, at scale.</Typography>
                           </Box>
                           <Box sx={{ mb: 1.2 }}>
-                            <Typography sx={{ fontWeight: 'bold', color: '#525252', fontSize: '0.85rem' }}>Garage</Typography>
-                            <Typography variant="body2" sx={{ color: '#525252', fontSize: '0.85rem' }}>Collaborative engagement model for accelerating AI and digital transformation.</Typography>
+                            <Typography sx={{ fontWeight: 'bold', color: '#ffffff', fontSize: '0.85rem' }}>Garage</Typography>
+                            <Typography variant="body2" sx={{ color: '#ffffff', fontSize: '0.85rem' }}>Collaborative engagement model for accelerating AI and digital transformation.</Typography>
                           </Box>
                           <Box>
-                            <Typography sx={{ fontWeight: 'bold', color: '#525252', fontSize: '0.85rem' }}>X-Force</Typography>
-                            <Typography variant="body2" sx={{ color: '#525252', fontSize: '0.85rem' }}>Build a comprehensive, integrated security program to protect your organization from global threats.</Typography>
+                            <Typography sx={{ fontWeight: 'bold', color: '#ffffff', fontSize: '0.85rem' }}>X-Force</Typography>
+                            <Typography variant="body2" sx={{ color: '#ffffff', fontSize: '0.85rem' }}>Build a comprehensive, integrated security program to protect your organization from global threats.</Typography>
                           </Box>
                         </Box>
                       </Box>

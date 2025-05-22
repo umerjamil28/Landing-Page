@@ -85,7 +85,7 @@ function MainNavBar({ isMobile }) {
                     modifiers={[{ name: 'offset', options: { offset: [0, 8] } }]}
                   >
                     <ClickAwayListener onClickAway={handleMenuClose}>
-                      <Paper elevation={3} sx={{ width: '100vw', maxWidth: '100vw', borderRadius: 0, mt: 0.5, px: 8, py: 4, boxSizing: 'border-box' }}>
+                      <Paper elevation={3} sx={{width: '100vw', maxWidth: '100vw', borderRadius: 0, mt: 2.5, px: 8, py: 4, boxSizing: 'border-box', backgroundColor: '#2D53A4' }}>
                         <Grid
                           container
                           columnSpacing="256px"
@@ -112,7 +112,7 @@ function MainNavBar({ isMobile }) {
                                     alignItems: 'center',
                                     fontSize: '1.35rem',
                                     fontWeight: 400,
-                                    color: '#222',
+                                    color: '#ffffff',
                                     cursor: 'pointer',
                                     transition: 'color 0.2s',
                                     '&:hover': { color: '#0f62fe' },
